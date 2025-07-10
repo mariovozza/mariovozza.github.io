@@ -1,11 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mario Vozza – AI Researcher</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for publications */
+    .scrollbar-thin::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #22d3ee; /* cyan-400 */
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200 font-mono leading-relaxed">
 
@@ -26,7 +36,7 @@
   <section class="px-6 py-12 max-w-4xl mx-auto">
     <h2 class="text-2xl text-cyan-400 font-bold mb-4">About Me</h2>
     <p>
-      I am a PhD in Artificial Intelligence with a focus on Scientific Machine Learning and optimal control. My background combines AI, control systems, and mechanical engineering. I’ve taught, supervised students, and spoken at conferences.
+      I am a PhD in Artificial Intelligence with a focus on Scientific Machine Learning and approximation of PDE solutions with Neural Networks. My background combines AI and control systems.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
       <div>
@@ -53,17 +63,27 @@
   <!-- Research -->
   <section class="px-6 py-12 max-w-4xl mx-auto bg-zinc-900 rounded-2xl shadow-md">
     <h2 class="text-2xl text-cyan-400 font-bold mb-4">Research</h2>
-    <p class="mb-4">My main research area is the approximation of complex physical phenomena using AI, particularly in additive manufacturing and nanomaterials simulation. Additional interests include anomaly detection and unsupervised learning in industrial environments.</p>
+    <p class="mb-4">
+      My main research area is the approximation of complex physical phenomena using AI, particularly in additive manufacturing and nanomaterials simulation. Additional interests include anomaly detection and unsupervised learning in industrial environments.
+    </p>
   </section>
 
   <!-- Publications -->
   <section class="px-6 py-12 max-w-4xl mx-auto">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-4">Publications</h2>
-    <ul class="list-disc list-inside text-zinc-300 space-y-2">
-      <li><strong>DeepSurrogate:</strong> A deep-learning framework for surrogate modeling of nano-materials. <em>arXiv, 2024</em></li>
-      <li><strong>GrapheneDB:</strong> FAIR dataset for graphene-based material simulation. <em>Springer AI-Mat, 2023</em></li>
-      <!-- Add more -->
-    </ul>
+    <h2 class="text-2xl text-cyan-400 font-bold mb-6">Publications</h2>
+    <div class="max-h-96 overflow-y-auto scrollbar-thin pr-4">
+      <ul class="list-disc list-inside space-y-3 text-zinc-300">
+        <li><strong>Nele, Luigi, Mattera, Giulio, Vozza, Mario (2022)</strong>. Deep neural networks for defects detection in gas metal arc welding. <em>Applied Sciences, 12(7), 3615</em>.</li>
+        <li><strong>Forni, Tommaso, Vozza, Mario, et al. (2023)</strong>. AI and data-driven infrastructures for workflow automation and integration in advanced research and industrial applications. <em>Ital-IA, pp. 105–111</em>.</li>
+        <li><strong>Vozza, Mario, Forni, Tommaso, et al. (2024)</strong>. Efficient Workflow Automation for Materials Modelling: Towards Predictive AI Systems Using High Throughput Synthetic Dataset Generation.</li>
+        <li><strong>Vozza, Mario, Forni, Tommaso, et al. (2024)</strong>. Advanced clustering technique for automatic labelling of welding signals. <em>In Titolo volume non avvalorato, Elsevier</em>.</li>
+        <li><strong>Nele, Luigi, Mattera, Giulio, et al. (2024)</strong>. Towards the application of machine learning in digital twin technology: a multi-scale review. <em>Discover Applied Sciences, 6(10), 502</em>.</li>
+        <li><strong>Vozza, Mario, Polden, Joseph, et al. (2024)</strong>. Explaining the Anomaly Detection in Additive Manufacturing via Boosting Models and Frequency Analysis. <em>Mathematics, 12(21), 3414</em>.</li>
+        <li><strong>Mattera, Giulio, Vozza, Mario, et al. (2024)</strong>. Frequency informed convolutional autoencoder for in situ anomaly detection in wire arc additive manufacturing. <em>Journal of Intelligent Manufacturing, pp. 1–16</em>.</li>
+        <li><strong>Le Piane, Fabio, Vozza, Mario, et al. (2024)</strong>. Integrating HPC, machine learning, data workflows, and infrastructures for multiscale simulations and nanomaterials technologies. <em>Beilstein Journal of Nanotechnology, 15(1), 1498–1521</em>.</li>
+        <li><strong>Forni, Tommaso, Mattera, Giulio, Vozza, Mario, et al. (2025)</strong>. Vision-based defect localisation and automated planning for robotic spray coating systems. <em>Journal of the Brazilian Society of Mechanical Sciences and Engineering, 47(9), 1–15</em>.</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Projects -->
@@ -71,9 +91,9 @@
     <h2 class="text-2xl text-cyan-400 font-bold mb-4">Projects</h2>
     <p class="mb-4">Here are some of my public repositories and collaborations:</p>
     <ul class="list-disc list-inside text-zinc-300 space-y-2">
-      <li><a href="https://github.com/yourusername/graphene-surrogate" class="text-cyan-300 hover:underline">graphene-surrogate</a> – Surrogate model using SciML techniques</li>
-      <li><a href="https://github.com/yourusername/egr-valve-control" class="text-cyan-300 hover:underline">egr-valve-control</a> – Optimal control for EGR systems in automotive</li>
-      <li><a href="https://github.com/yourusername/momotec-digital-twin" class="text-cyan-300 hover:underline">momotec-digital-twin</a> – Urban mobility digital twin simulator</li>
+      <li><a href="https://github.com/mariovozza/graphene-surrogate" class="text-cyan-300 hover:underline">graphene-surrogate</a> – Surrogate model using SciML techniques</li>
+      <li><a href="https://github.com/mariovozza/egr-valve-control" class="text-cyan-300 hover:underline">egr-valve-control</a> – Optimal control for EGR systems in automotive</li>
+      <li><a href="https://github.com/mariovozza/momotec-digital-twin" class="text-cyan-300 hover:underline">momotec-digital-twin</a> – Urban mobility digital twin simulator</li>
     </ul>
   </section>
 
@@ -81,12 +101,12 @@
   <section class="px-6 py-12 max-w-4xl mx-auto">
     <h2 class="text-2xl text-cyan-400 font-bold mb-4">Contact</h2>
     <p class="text-zinc-300">
-      Reach me via <a href="mailto:your@email.com" class="text-cyan-300 hover:underline">email</a>, or connect on <a href="https://linkedin.com/in/mario-vozza-875417183" class="text-cyan-300 hover:underline">LinkedIn</a> or <a href="https://github.com/yourusername" class="text-cyan-300 hover:underline">GitHub</a>.
+      Reach me via <a href="mailto:marvozza@gmail.com" class="text-cyan-300 hover:underline">email</a>, or connect on <a href="https://linkedin.com/in/mario-vozza-875417183" class="text-cyan-300 hover:underline">LinkedIn</a> or <a href="https://github.com/mariovozza" class="text-cyan-300 hover:underline">GitHub</a>.
     </p>
   </section>
 
   <footer class="text-center text-zinc-500 py-6 text-sm border-t border-zinc-800 mt-12">
-    © 2025 Mario Vozza. Built with ❤️ and caffeine.
+    © 2025 Mario Vozza. Built with ❤️ and caffeine ☕.
   </footer>
 </body>
 </html>
