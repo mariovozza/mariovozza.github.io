@@ -1,14 +1,37 @@
 title: Mario Vozza
 email: marvozza@gmail.com
-description: >- # this means to ignore newlines until next non-indented line
-  PhD in Artificial Intelligence, Scientific Machine Learning, Control Systems.
-baseurl: "" # leave empty for GitHub Pages root
-url: "https://mariovozza.github.io" # Your GitHub Pages URL
+description: "PhD in AI | Control Systems | Scientific Machine Learning"
+baseurl: "" 
+url: "https://mariovozza.github.io" 
 
-theme: jekyll-theme-slate
+theme: minimal-mistakes-jekyll
 
-markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-plugins: []
+# Menu principale
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
 
-# Customize colors by overriding CSS (see below)
+# Google Fonts
+google_fonts:
+  - family: "Fira Sans"
+  - family: "Fira Mono"
+
+# Colori personalizzati (puoi mettere questo file in assets/css/custom.scss e importarlo)
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+
+# Personalizzazione CSS (crea _sass/_custom.scss e importalo nel main.scss)
