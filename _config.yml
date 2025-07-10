@@ -5,10 +5,10 @@ baseurl: ""
 url: "https://mariovozza.github.io" 
 
 theme: minimal-mistakes-jekyll
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
 
 # Menu principale
 navigation:
