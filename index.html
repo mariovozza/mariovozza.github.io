@@ -5,43 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mario Vozza – AI Researcher</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* Custom scrollbar for publications */
+    /* Override Tailwind font */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000; /* black */
+      color: #d7e4c9; /* light greenish */
+    }
+    /* Scrollbar */
     .scrollbar-thin::-webkit-scrollbar {
       height: 6px;
       width: 6px;
     }
     .scrollbar-thin::-webkit-scrollbar-thumb {
-      background-color: #22d3ee; /* cyan-400 */
+      background-color: #0B3D0B; /* dark green */
       border-radius: 3px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    /* Links */
+    a {
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7fb77e; /* lighter green */
+      text-decoration: underline;
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-200 font-mono leading-relaxed">
+<body>
 
   <!-- Hero -->
   <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <img src="photo.png" alt="Mario Vozza" class="rounded-full w-40 h-40 mb-6 border-4 border-cyan-400 shadow-lg" />
-    <h1 class="text-4xl md:text-5xl font-bold text-cyan-400">Mario Vozza</h1>
-    <p class="mt-4 text-lg max-w-xl text-zinc-400">PhD in AI · Control Systems · Scientific Machine Learning · Nerd with a mission</p>
-    <div class="mt-6 flex gap-4">
-      <a href="https://www.linkedin.com/in/mario-vozza-875417183/" class="text-cyan-300 hover:underline">LinkedIn</a>
-      <a href="https://github.com/mariovozza" class="text-cyan-300 hover:underline">GitHub</a>
-      <a href="mailto:marvozza@gmail.com" class="text-cyan-300 hover:underline">Email</a>
-      <a href="cv.pdf" class="text-cyan-300 hover:underline">Download CV</a>
+    <img src="photo.png" alt="Mario Vozza" class="rounded-full w-40 h-40 mb-6 border-4 border-[#0B3D0B] shadow-xl shadow-green-900" />
+    <h1 class="text-5xl font-extrabold text-[#0B3D0B] drop-shadow-md">Mario Vozza</h1>
+    <p class="mt-4 text-xl max-w-xl text-[#7fb77e]">PhD in AI · Control Systems · Scientific Machine Learning · Nerd with a mission</p>
+    <div class="mt-8 flex gap-6">
+      <a href="https://www.linkedin.com/in/mario-vozza-875417183/" class="text-[#0B3D0B] font-semibold hover:text-[#a2d089]">LinkedIn</a>
+      <a href="https://github.com/mariovozza" class="text-[#0B3D0B] font-semibold hover:text-[#a2d089]">GitHub</a>
+      <a href="mailto:marvozza@gmail.com" class="text-[#0B3D0B] font-semibold hover:text-[#a2d089]">Email</a>
+      <a href="cv.pdf" class="text-[#0B3D0B] font-semibold hover:text-[#a2d089]">Download CV</a>
     </div>
   </section>
 
   <!-- About -->
   <section class="px-6 py-12 max-w-4xl mx-auto">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-4">About Me</h2>
-    <p>
+    <h2 class="text-3xl text-[#0B3D0B] font-bold mb-6 border-b-4 border-[#0B3D0B] pb-2">About Me</h2>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
       I am a PhD in Artificial Intelligence with a focus on Scientific Machine Learning and approximation of PDE solutions with Neural Networks. My background combines AI and control systems.
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 max-w-3xl mx-auto">
       <div>
-        <h3 class="text-xl text-cyan-300 font-semibold">Hard Skills</h3>
-        <ul class="list-disc list-inside text-zinc-300">
+        <h3 class="text-2xl text-[#2b662b] font-semibold mb-4">Hard Skills</h3>
+        <ul class="list-disc list-inside text-[#a2d089] space-y-2 text-lg">
           <li>Python, MATLAB, C++</li>
           <li>PyTorch, TensorFlow, CUDA, CuPy, scikit-learn</li>
           <li>Control Systems, Optimization</li>
@@ -49,8 +68,8 @@
         </ul>
       </div>
       <div>
-        <h3 class="text-xl text-cyan-300 font-semibold">Soft Skills</h3>
-        <ul class="list-disc list-inside text-zinc-300">
+        <h3 class="text-2xl text-[#2b662b] font-semibold mb-4">Soft Skills</h3>
+        <ul class="list-disc list-inside text-[#a2d089] space-y-2 text-lg">
           <li>Scientific Communication</li>
           <li>Team Leadership & Mentoring</li>
           <li>Public Speaking</li>
@@ -61,18 +80,18 @@
   </section>
 
   <!-- Research -->
-  <section class="px-6 py-12 max-w-4xl mx-auto bg-zinc-900 rounded-2xl shadow-md">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-4">Research</h2>
-    <p class="mb-4">
+  <section class="px-6 py-12 max-w-4xl mx-auto bg-[#062006] rounded-3xl shadow-lg border border-[#0B3D0B]">
+    <h2 class="text-3xl text-[#0B3D0B] font-bold mb-6 border-b-2 border-[#0B3D0B] pb-2">Research</h2>
+    <p class="text-lg max-w-3xl mx-auto leading-relaxed text-[#9acb8c]">
       My main research area is the approximation of complex physical phenomena using AI, particularly in additive manufacturing and nanomaterials simulation. Additional interests include anomaly detection and unsupervised learning in industrial environments.
     </p>
   </section>
 
   <!-- Publications -->
   <section class="px-6 py-12 max-w-4xl mx-auto">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-6">Publications</h2>
+    <h2 class="text-3xl text-[#0B3D0B] font-bold mb-8 border-b-4 border-[#0B3D0B] pb-2">Publications</h2>
     <div class="max-h-96 overflow-y-auto scrollbar-thin pr-4">
-      <ul class="list-disc list-inside space-y-3 text-zinc-300">
+      <ul class="list-disc list-inside space-y-4 text-[#a2d089] text-lg leading-relaxed max-w-3xl mx-auto">
         <li><strong>Nele, Luigi, Mattera, Giulio, Vozza, Mario (2022)</strong>. Deep neural networks for defects detection in gas metal arc welding. <em>Applied Sciences, 12(7), 3615</em>.</li>
         <li><strong>Forni, Tommaso, Vozza, Mario, et al. (2023)</strong>. AI and data-driven infrastructures for workflow automation and integration in advanced research and industrial applications. <em>Ital-IA, pp. 105–111</em>.</li>
         <li><strong>Vozza, Mario, Forni, Tommaso, et al. (2024)</strong>. Efficient Workflow Automation for Materials Modelling: Towards Predictive AI Systems Using High Throughput Synthetic Dataset Generation.</li>
@@ -87,26 +106,27 @@
   </section>
 
   <!-- Projects -->
-  <section class="px-6 py-12 max-w-4xl mx-auto bg-zinc-900 rounded-2xl shadow-md">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-4">Projects</h2>
-    <p class="mb-4">Here are some of my public repositories and collaborations:</p>
-    <ul class="list-disc list-inside text-zinc-300 space-y-2">
-      <li><a href="https://github.com/mariovozza/graphene-surrogate" class="text-cyan-300 hover:underline">graphene-surrogate</a> – Surrogate model using SciML techniques</li>
-      <li><a href="https://github.com/mariovozza/egr-valve-control" class="text-cyan-300 hover:underline">egr-valve-control</a> – Optimal control for EGR systems in automotive</li>
-      <li><a href="https://github.com/mariovozza/momotec-digital-twin" class="text-cyan-300 hover:underline">momotec-digital-twin</a> – Urban mobility digital twin simulator</li>
+  <section class="px-6 py-12 max-w-4xl mx-auto bg-[#062006] rounded-3xl shadow-lg border border-[#0B3D0B]">
+    <h2 class="text-3xl text-[#0B3D0B] font-bold mb-6 border-b-2 border-[#0B3D0B] pb-2">Projects</h2>
+    <p class="mb-6 max-w-3xl mx-auto text-[#9acb8c] text-lg">Here are some of my public repositories and collaborations:</p>
+    <ul class="list-disc list-inside text-[#a2d089] space-y-3 max-w-3xl mx-auto text-lg">
+      <li><a href="https://github.com/mariovozza/graphene-surrogate" class="hover:text-[#c7f0b2] transition-colors duration-300">graphene-surrogate</a> – Surrogate model using SciML techniques</li>
+      <li><a href="https://github.com/mariovozza/egr-valve-control" class="hover:text-[#c7f0b2] transition-colors duration-300">egr-valve-control</a> – Optimal control for EGR systems in automotive</li>
+      <li><a href="https://github.com/mariovozza/momotec-digital-twin" class="hover:text-[#c7f0b2] transition-colors duration-300">momotec-digital-twin</a> – Urban mobility digital twin simulator</li>
     </ul>
   </section>
 
   <!-- Contact -->
   <section class="px-6 py-12 max-w-4xl mx-auto">
-    <h2 class="text-2xl text-cyan-400 font-bold mb-4">Contact</h2>
-    <p class="text-zinc-300">
-      Reach me via <a href="mailto:marvozza@gmail.com" class="text-cyan-300 hover:underline">email</a>, or connect on <a href="https://linkedin.com/in/mario-vozza-875417183" class="text-cyan-300 hover:underline">LinkedIn</a> or <a href="https://github.com/mariovozza" class="text-cyan-300 hover:underline">GitHub</a>.
+    <h2 class="text-3xl text-[#0B3D0B] font-bold mb-6 border-b-4 border-[#0B3D0B] pb-2">Contact</h2>
+    <p class="text-[#a2d089] text-lg max-w-3xl mx-auto">
+      Reach me via <a href="mailto:marvozza@gmail.com" class="hover:text-[#c7f0b2]">email</a>, or connect on <a href="https://linkedin.com/in/mario-vozza-875417183" class="hover:text-[#c7f0b2]">LinkedIn</a> or <a href="https://github.com/mariovozza" class="hover:text-[#c7f0b2]">GitHub</a>.
     </p>
   </section>
 
-  <footer class="text-center text-zinc-500 py-6 text-sm border-t border-zinc-800 mt-12">
+  <footer class="text-center text-[#375537] py-6 text-sm border-t border-[#0B3D0B] mt-12 select-none">
     © 2025 Mario Vozza. Built with ❤️ and caffeine ☕.
   </footer>
+
 </body>
 </html>
