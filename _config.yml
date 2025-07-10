@@ -4,7 +4,7 @@ description: "PhD in AI | Control Systems | Scientific Machine Learning"
 baseurl: "" 
 url: "https://mariovozza.github.io" 
 
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
