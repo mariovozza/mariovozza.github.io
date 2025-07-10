@@ -1,0 +1,14 @@
+title: Mario Vozza
+email: marvozza@gmail.com
+description: >- # this means to ignore newlines until next non-indented line
+  PhD in Artificial Intelligence, Scientific Machine Learning, Control Systems.
+baseurl: "" # leave empty for GitHub Pages root
+url: "https://mariovozza.github.io" # Your GitHub Pages URL
+
+theme: jekyll-theme-slate
+
+markdown: kramdown
+
+plugins: []
+
+# Customize colors by overriding CSS (see below)
