@@ -1,15 +1,8 @@
 title: "My Homepage"
 theme: jekyll-theme-cayman
 
-# Custom colours
-style: |
-  body {
-    background-colour: #2e2e2e; /* Dark grey */
-    colour: #e0e0e0;           /* Light text */
-  }
-  a {
-    colour: #7CFC00;           /* Light green */
-  }
-  a:hover {
-    colour: #adff2f;
-  }
+plugins:
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: assets/css
