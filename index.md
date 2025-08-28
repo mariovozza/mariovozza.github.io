@@ -3,7 +3,7 @@ layout: default
 title: "Homepage"
 ---
 <p align="center">
-  <img src="asset/images/photo.png" alt="My profile picture" width="160" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.3);" />
+  <img src="assets/images/photo.png" alt="My profile picture" width="160" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.3);" />
 </p>
 
 # 👋 Hello, I'm Mario Vozza
@@ -29,7 +29,8 @@ I have collaborated on several projects across both academia and industry, tackl
 In particular, I worked with real-world data derived from **digital twins of the cities of Bologna and Modena**, extracted through the **SUMO traffic simulator**.  
 
 I am always open to new challenges and fields of exploration.  
-One of the key lessons I have learnt during my doctoral path is that in the realm of **applied AI**, the fusion of diverse backgrounds often makes the difference between a good model and an excellent one — capable of being not only accurate, but also efficient when deployed in real-world environments.  
+One of the key lessons I have learnt during my doctoral path is that in the realm of **applied AI**, the fusion of diverse backgrounds often makes the difference between a good model and an excellent one — capable of being not only accurate, but also efficient when deployed in real-world environments.
+
 ---
 
 ## 📂 My Projects
