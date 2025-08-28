@@ -2,6 +2,9 @@
 layout: default
 title: "Homepage"
 ---
+<p align="center">
+  <img src="asset/images/photo.png" alt="My profile picture" width="160" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.3);" />
+</p>
 
 # 👋 Hello, I'm Mario Vozza
 ## **Currently: Visiting Ph.D. Student at Durham University, Durham, UK**.
