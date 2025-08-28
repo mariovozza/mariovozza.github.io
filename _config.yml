@@ -1,37 +1,17 @@
-title: Mario Vozza
-email: marvozza@gmail.com
-description: "PhD in AI | Control Systems | Scientific Machine Learning"
-baseurl: "" 
-url: "https://mariovozza.github.io" 
 
-theme: jekyll-theme-slate
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+```yaml
+title: "My Homepage"
+theme: jekyll-theme-cayman
 
-
-# Menu principale
-navigation:
-  - title: Home
-    url: /
-  - title: Research
-    url: /research/
-  - title: Publications
-    url: /publications/
-  - title: Projects
-    url: /projects/
-  - title: Contact
-    url: /contact/
-
-# Google Fonts
-google_fonts:
-  - family: "Fira Sans"
-  - family: "Fira Mono"
-
-# Colori personalizzati (puoi mettere questo file in assets/css/custom.scss e importarlo)
-sass:
-  style: compressed
-  load_paths:
-    - _sass
-
-# Personalizzazione CSS (crea _sass/_custom.scss e importalo nel main.scss)
+# Custom colours
+style: |
+  body {
+    background-colour: #2e2e2e; /* Dark grey */
+    colour: #e0e0e0;           /* Light text */
+  }
+  a {
+    colour: #7CFC00;           /* Light green */
+  }
+  a:hover {
+    colour: #adff2f;
+  }
