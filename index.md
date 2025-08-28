@@ -33,7 +33,7 @@ One of the key lessons I have learnt during my doctoral path is that in the real
 
 Here are some of my main repositories:
 
-- [Repo 1](https://github.com/mariovozza/TorchPDE.git)  
+- [Torch-PDE](https://github.com/mariovozza/TorchPDE.git)  
   Torch-PDE is a repository aimed at collecting implementations of partial differential equations (PDEs) rewritten in PyTorch. The long-term goal is to build a library of efficient, GPU-accelerated      solvers that can be used both for scientific simulations and for generating datasets in Scientific Machine Learning (SciML).
 
 ➡️ You can explore all my repositories on [GitHub](https://github.com/mariovozza).  
@@ -44,6 +44,6 @@ You can find the list of my pubblications on my [google scholar](https://scholar
 
 - 📑 [Curriculum Vitae (PDF)](cv.pdf)
 - 💼 [LinkedIn](https://www.linkedin.com/in/mario-vozza-875417183/)
-- 📧 Email: mariovozza@gmail.com  
+- 📧 Email: mariovozza.dii@gmail.com  
 
 ---
